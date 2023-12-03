@@ -1,0 +1,41 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav-bar main-content right"
+        "nav-bar footer footer";
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 15vh 1fr 15vh;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-areas: 'h2 header-text';
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+}
+
+.nav-bar {
+    grid-area: nav-bar;
+    display: grid;
+    grid-template-rows: 14rem 14rem 14rem;
+}
+
+.main-content {
+    grid-area: main-content;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+}
+
+.right {
+    grid-area: right;
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: 'h2 footer-text';
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+}

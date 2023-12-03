@@ -1,0 +1,35 @@
+.grid {
+    max-width: 1200px;
+}
+
+.grid-item {
+    width: 160px;
+    height: 120px;
+    float: left;
+    background: #84ad6c;
+    border: 2px solid hsla(0, 0%, 0%, 0.5);
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.grid-item::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.grid-item::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 3px;
+}
+
+.grid-item--width2 { width: 420px }
+.grid-item--width3 { width: 580px }
+.grid-item--width4 { width: 740px }
+
+.grid-item--height2 { height: 200px }
+.grid-item--height3 { height: 260px }
+.grid-item--height4 { height: 360px }
+
+label {
+    font-size: 2rem;
+}
